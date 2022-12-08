@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./budget.css">
+    <title>budget calculator</title>
+</head>
+
+<body>
+    <div class="navba"><h1>BUDGET CALCULATOR</h1></div>
+    <div class="container"><center>
+        <!-- <div class="navbar"></div> -->
+        <div class="row">
+            <div class="col-4 mt-5">
+                <div class="card border border-info shadow-0 mb-3" id="card" style="max-width: 18rem;">
+                    <div class="card-header ">USER INFO</div>
+                    <div class="card-body">
+                        <div class="form-outline">
+
+                            <input type="text" id="user_name" class="form-control form-control"
+                                placeholder="Enter your Name" />
+                        </div>
+                        <div class="form-outline mt-4">
+
+                            <input type="text" id="income" class="form-control form-control"
+                                placeholder="Monthly income" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mt-5">
+                <div class="card border border-info shadow-0 mb-3" style="max-width: 18rem;">
+                    <div class="card-header">EXPENSES</div>
+                    <div class="card-body">
+
+                        <div class="form-outline ">
+                            <label for="">Room Rent</label>
+                            <input type="text" id="ex_rent" class="form-control form-control"
+                                placeholder="Room Rent" value="0" />
+                        </div>
+
+                        <div class="form-outline mt-4">
+                            <label for="">Electricity Bill</label>
+                            <input type="text" id="ex_bill" class="form-control form-control"
+                                placeholder="Electricity Bill"  value="0" />
+                        </div>
+
+                        <div class="form-outline mt-4">
+                            <label for="">Food</label>
+                            <input type="text" id="ex_food" class="form-control form-control"
+                                placeholder="Food"  value="0" />
+                        </div>
+
+                        <div class="form-outline mt-4">
+                            <label for="">Insurance</label>
+                            <input type="text" id="ex_insurance" class="form-control form-control"
+                                placeholder="Insurance"  value="0" />
+                        </div>
+
+
+                        <div class="form-outline mt-4">
+                            <label for="">Others</label>
+                            <input type="text" id="ex_others" class="form-control form-control"
+                                placeholder="Others"  value="0"  />
+                        </div>
+                        <div class="button mt-4 ">
+                          <center> <button type="submit" onclick="submit()">SUBMIT</button></center> 
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mt-5">
+                <div class="card border border-info shadow-0 mb-3" id="c3" style="max-width: 18rem;">
+                    <div class="card-header">BALANCE</div>
+                    <div class="card-body ">
+
+                        
+                        <div class="form-outline mt-4">
+                            <input type="text" id="Balance" class="form-control form-control"
+                                placeholder="Balance" />
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div></center>
+    </div>
+
+</body>
+<script src="./budget.js"></script>
+
+</html>
